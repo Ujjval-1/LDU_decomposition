@@ -1,2 +1,2 @@
 # LDU_decomposition
-LDU factorization step by step
+LDU factorization (step by step)
