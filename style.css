@@ -1,44 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1, h2 {
-    color: #2c3e50;
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
 }
 
-label, input, button {
-    margin: 5px 0;
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #103b57;
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .matrix-input {
-    width: 50px;
-    margin-right: 10px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
 }
 
-pre {
-    background-color: #ecf0f1;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
+.matrix-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.matrix {
-    font-family: monospace;
-    color: #16a085;
+label {
+    font-size: 1.2em;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
