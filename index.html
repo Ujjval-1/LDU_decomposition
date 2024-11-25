@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDU Factorization - Matrix Order Input</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ldu decomposition</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>LDU Factorization</h1>
-        <p>Enter the order of the square matrix (n x n) to begin:</p>
-        <form action="matrix_input.html" method="get">
-            <label for="matrix-order">Order of Matrix (n x n): </label>
-            <input type="number" id="matrix-order" name="order" min="1" required>
-            <button type="submit">Continue</button>
-        </form>
-    </div>
+    <center>
+
+    <h1>LDU Factorization</h1> 
+    <form id="matrixForm"> 
+        <label for="rows">Length of matrix:</label><br>
+        <input type="number" id="rows" placeholder="Enter length"><br><br> 
+        <div id="matrixInputs"></div> 
+        <button type="button" onclick="generateMatrixInputs()">Next</button> 
+        <button type="button" onclick="calculateLDU()" style="display: none;">Calculate LDU</button> 
+    </form> 
+    
+    <h2>Steps:</h2> 
+    <pre id="steps"></pre>
+    <h2>Result:</h2>
+    <pre id="result"></pre></center>
+    
+    <script src="calculations.js"></script>
 </body>
 </html>
