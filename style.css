@@ -1,85 +1,70 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-content:center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #a4a4c0;
+    color: #290e0e;
+    background-size:cover;
+    background-image: url("three.jpg");
+
+
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
+h1, h2 {
+    color: #47110f;
 }
 
-h1 {
-    font-size: 2em;
-    color: #4CAF50;
+label, input, button {
+    color: #083130;
+    margin: 5px 0;
 }
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-input[type="number"] {
-    width: 50px;
-    margin: 5px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input{
+    color:black
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    background-color: #2376ad;
+    color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    background-color: #103b57;
 }
 
 .matrix-input {
-    display: grid;
-    gap: 10px;
-    justify-items: center;
+    width: 50px;
+    margin-right: 10px;
+    
 }
 
-.matrix-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+pre {
+    background-color: #b8d6de;
+    padding: 40px;
+    border-color:#0c022c;
+    overflow-x: auto;
+    margin-left: 200px;
+    margin-right: 250px;
 }
 
-label {
-    font-size: 1.2em;
+.matrix {
+    font-family: monospace;
+    color: #16a085;
 }
 
-input[type="number"] {
-    width: 60px;
-}
 
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
+
+
+
+
+
+
+
+
+
+
+
+
